@@ -772,6 +772,12 @@ footer {
 	margin-top: 25px;
 }
 
+.register-form .login-password-wrapper::after {
+	background-image: url("./images/password_eye_black.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .register-form > button {
 	margin-top: 48px;
 }
@@ -782,7 +788,7 @@ footer {
 	font-family: Benton-Regular;
 	line-height: 21px;
 	text-align: center;
-	color: #58636c;
+	color: #292E32;
 }
 
 .register-extra-info > a {
@@ -798,6 +804,23 @@ footer {
 
 .request-otp-text > a {
 	color: #0069c4;
+}
+
+.register-password-guide {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 16px;
+	margin-top: 16px;
+}
+
+.register-password-guide > p {
+	font-family: Benton-Regular;
+	font-size: 14px;
+	color: #58636c;
+}
+
+.line-through {
+	text-decoration: line-through;
 }
 
 @media (max-width: 700px) {
