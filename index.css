@@ -135,6 +135,13 @@ button:disabled {
 	font-family: Benton-Regular;
 }
 
+.button-secondary-transparent {
+	background-color: #f5faff;
+	color: #0069c4;
+	font-family: Benton-Medium;
+	border: 2px solid #0069c4;
+}
+
 a {
 	outline: none;
 	font-family: inherit;
@@ -696,6 +703,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	padding: 100px 64px 200px;
+	/* height: 100vh; */
 }
 
 .register-heading-text {
@@ -723,6 +731,12 @@ footer {
 	border: none;
 }
 
+.register-stepper-item.disabled > span {
+	opacity: 0.3;
+	color: #fff;
+	background-color: #0069c4;
+}
+
 .register-stepper-item > span {
 	position: relative;
 	z-index: 2;
@@ -746,6 +760,11 @@ footer {
 	height: 1px;
 	background-color: #c1c7cd;
 	flex-shrink: 0;
+}
+
+.register-stepper-item.disabled::after {
+	opacity: 0.2;
+	width: 65px;
 }
 
 .register-stepper-item:last-of-type::after {
@@ -788,7 +807,7 @@ footer {
 	font-family: Benton-Regular;
 	line-height: 21px;
 	text-align: center;
-	color: #292E32;
+	color: #292e32;
 }
 
 .register-extra-info > a {
@@ -823,6 +842,55 @@ footer {
 	text-decoration: line-through;
 }
 
+.register-guide {
+	width: 100%;
+	max-width: 479px;
+	margin: 40px auto 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.register-guide-lead-text {
+	font-family: Benton-Regular;
+	color: #292e32;
+	line-height: 21px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.register-guide-lead-list {
+	margin: 34px auto 62px;
+}
+
+.register-guide-lead-list > li {
+	font-family: Benton-Regular;
+	color: #292e32;
+	max-width: 350px;
+	margin-bottom: 14px;
+	display: flex;
+	line-height: 21px;
+}
+
+.register-guide-lead-list > li:last-of-type {
+	margin-bottom: 0px;
+}
+
+.register-guide-lead-list > li::before {
+	content: "";
+	background-image: url("./images/checked_orange.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+	margin-right: 20px;
+}
+
+.register-guide > button:last-of-type {
+	margin-top: 24px;
+}
+
 @media (max-width: 700px) {
 	.register-header {
 		padding: 48px 16px;
@@ -841,11 +909,19 @@ footer {
 	.register {
 		padding: 50px 16px;
 	}
+
+	.register-stepper-item.disabled::after {
+		width: 30px;
+	}
 }
 
 @media (max-width: 400px) {
 	.register-stepper-item::after {
 		width: 50px;
+	}
+
+	.register-stepper-item.disabled::after {
+		width: 20px;
 	}
 }
 /* register styling ends */
