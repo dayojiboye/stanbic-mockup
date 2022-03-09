@@ -279,9 +279,15 @@ main {
 .login-left {
 	flex: 1;
 	height: 100vh;
-	padding: 48px 64px;
+	padding: 48px 64px 125px;
 	display: flex;
 	flex-direction: column;
+}
+
+.login-two .login-left {
+	background-image: url("./images/login_background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .login-logo-container {
@@ -300,9 +306,21 @@ main {
 	flex: 1;
 }
 
+.login-two .login-left-wrapper {
+	flex-direction: column;
+}
+
 .login-left-desc {
 	margin-right: 24px;
 	flex: 1;
+}
+
+.login-two .login-left-desc {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
 }
 
 .login-left-desc > h1 {
@@ -318,8 +336,14 @@ main {
 	color: #0069c4;
 }
 
+.login-two .login-left-desc > h1 {
+	color: #fff;
+	width: 690px;
+	max-width: 100%;
+	text-align: center;
+}
+
 .login-left-download {
-	margin-top: auto;
 	display: flex;
 	margin-top: 125px;
 }
@@ -330,10 +354,15 @@ main {
 	background-color: transparent;
 	border: 1px solid #ccc;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 .download-app-btn:first-of-type {
 	margin-right: 20px;
+}
+
+.login-two .login-left-download {
+	margin-top: 32px;
 }
 
 .download-app-btn > img {
@@ -355,9 +384,32 @@ main {
 	background-color: #0069c4;
 	width: 548px;
 	height: 100vh;
-	padding: 48px 64px;
+	padding: 48px 64px 125px;
 	display: flex;
 	flex-direction: column;
+}
+
+.login-two .login-right {
+	background-color: #f5faff;
+}
+
+.login-two .select-wrapper.language {
+	border: 1px solid #c1c7cd;
+	border-radius: 4px;
+	max-width: 115px;
+}
+
+.login-two .select-wrapper.language::after {
+	background: url("./images/chevron_down_blue.svg") no-repeat center;
+	background-size: cover;
+}
+
+.login-two .select-wrapper.language > select {
+	font-family: Benton-Medium;
+	height: 48px;
+	color: #0069c4;
+	padding-left: 12px;
+	border: none;
 }
 
 .login-right > .login-logo-container {
@@ -379,6 +431,10 @@ main {
 	color: #fff;
 	font-size: 32px;
 	margin-bottom: 60px;
+}
+
+.login-two .login-right-form > h2 {
+	color: #001324;
 }
 
 .login-input-wrapper {
@@ -405,6 +461,11 @@ main {
 	cursor: pointer;
 }
 
+.login-two .login-password-wrapper::after {
+	background: url("./images/password_eye_black.svg") no-repeat center;
+	background-size: cover;
+}
+
 .login-password-wrapper:last-of-type {
 	margin-top: 25px;
 }
@@ -424,6 +485,11 @@ main {
 	color: #fff;
 }
 
+.login-two .login-input-wrapper > label,
+.login-two .login-input-wrapper > input {
+	color: #292e32;
+}
+
 .login-input-wrapper > input:focus {
 	border: none;
 }
@@ -441,11 +507,24 @@ main {
 	font-family: Benton-Medium;
 }
 
+.login-two .login-forgot-password {
+	color: #001324;
+}
+
+.login-two .login-forgot-password > a {
+	color: #0069c4;
+}
+
 .login-right-form > .button-large {
 	width: 100%;
 	margin-top: 48px;
 	font-family: Benton-Medium;
 	font-size: 18px;
+}
+
+.login-two .login-right-form > .button-secondary {
+	background-color: #0069c4;
+	color: #fff;
 }
 
 .login-register-text {
@@ -461,6 +540,14 @@ main {
 	font-family: Benton-Medium;
 }
 
+.login-two .login-register-text {
+	color: #001324;
+}
+
+.login-two .login-register-text > a {
+	color: #0069c4;
+}
+
 .login-right-footer {
 	margin-top: auto;
 	display: flex;
@@ -472,7 +559,8 @@ main {
 	padding: 0px 22px;
 }
 
-.login-right-footer > p:last-of-type {
+.login-right-footer > p:last-of-type,
+.login-two .login-right-footer > p:last-of-type {
 	border: 0px;
 	padding-right: 0px;
 }
@@ -481,6 +569,14 @@ main {
 	color: #fff;
 	font-size: 14px;
 	font-family: Benton-Regular;
+}
+
+.login-two .login-right-footer > p {
+	border-right: 2px solid #001324;
+}
+
+.login-two .login-right-footer > p > a {
+	color: #001324;
 }
 
 /* media queries */
@@ -512,6 +608,7 @@ main {
 		max-width: 700px;
 		width: 100%;
 		margin: auto;
+		/* justify-content: flex-start; */
 	}
 }
 
@@ -521,19 +618,21 @@ main {
 		margin-top: 20px;
 	}
 
-	.login-right-footer > p {
+	.login-right-footer > p,
+	.login-two .login-right-footer > p {
 		border: none;
 		padding: 0px;
 		text-align: center;
 		margin-bottom: 10px;
 	}
 
-	.login-right-footer > p:last-of-type {
+	.login-right-footer > p:last-of-type,
+	.login-two .login-right-footer > p:last-of-type {
 		margin-bottom: 0px;
 	}
 
 	.login-right-form {
-		margin-top: 100px;
+		margin-top: 60px;
 	}
 }
 
