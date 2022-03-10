@@ -782,11 +782,18 @@ footer {
 .register-form {
 	margin-top: 64px;
 	width: 100%;
-	max-width: 478px;
+	max-width: 495px;
 }
 
-.register-form > .login-input-wrapper > label,
-.register-form > .login-input-wrapper > input {
+.register-form > .personal-info-form-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px 32px;
+	margin-bottom: 24px;
+}
+
+.register-form .login-input-wrapper > label,
+.register-form .login-input-wrapper > input {
 	color: #292e32;
 }
 
@@ -795,8 +802,12 @@ footer {
 	color: #89959f;
 }
 
-.register-form > .login-input-wrapper:last-of-type {
+.register-form .login-input-wrapper:last-of-type {
 	margin-top: 25px;
+}
+
+.register-form > .personal-info-form-grid .login-input-wrapper:last-of-type {
+	margin: 0px;
 }
 
 .register-form .login-password-wrapper::after {
@@ -807,6 +818,10 @@ footer {
 
 .register-form > button {
 	margin-top: 48px;
+}
+
+.register-form > button.mt-21 {
+	margin-top: 21px;
 }
 
 .register-extra-info {
@@ -929,6 +944,24 @@ footer {
 	max-width: 225px;
 }
 
+.personal-info-previous-button {
+	margin-top: 36px;
+	display: flex;
+	justify-content: center;
+}
+
+.personal-info-previous-button > a {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	color: #0069c4;
+	font-family: Benton-Medium;
+}
+
+.personal-info-previous-button > a > img {
+	margin-right: 11px;
+}
+
 @media (max-width: 700px) {
 	.register-header {
 		padding: 48px 16px;
@@ -961,6 +994,10 @@ footer {
 
 	.register-stepper-item.disabled::after {
 		width: 20px;
+	}
+
+	.register-form > .personal-info-form-grid {
+		grid-template-columns: 1fr;
 	}
 }
 /* register styling ends */
