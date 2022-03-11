@@ -798,6 +798,10 @@ footer {
 	color: #292e32;
 }
 
+.register-form .login-input-wrapper > input {
+	font-size: 18px;
+}
+
 .login-input-wrapper.disabled > label,
 .login-input-wrapper.disabled > input {
 	color: #89959f;
@@ -815,6 +819,43 @@ footer {
 	background-image: url("./images/password_eye_black.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.register-form select {
+	border: 0px;
+	font-size: 18px;
+}
+
+.register-form .login-input-wrapper {
+	position: relative;
+}
+
+.register-form .login-input-wrapper.select::after {
+	content: "";
+	background-image: url("./images/chevron_down_big_black.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 9px;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+
+.register-form .login-input-wrapper.date-picker::after {
+	content: "";
+	background-image: url("./images/calendar_icon.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 21px;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
 }
 
 .register-form > button {
