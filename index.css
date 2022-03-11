@@ -1064,6 +1064,19 @@ footer {
 	max-width: 479px;
 }
 
+.register-upload-text.mt-25 {
+	margin-top: 25px;
+}
+
+.register-upload-text.mb-80 {
+	margin-bottom: 80px;
+}
+
+.register-upload-text > a {
+	color: #0069c4;
+	font-family: Benton-Medium;
+}
+
 .upload-document-grid {
 	margin-top: 58px;
 	display: grid;
@@ -1113,6 +1126,30 @@ footer {
 	font-family: Benton-Regular;
 	text-align: center;
 	margin-top: 20px;
+}
+
+.register-upload-sub-header {
+	color: #001324;
+	text-align: center;
+	font-family: Benton-Medium;
+	font-size: 16px;
+	margin-top: 32px;
+	margin-bottom: 16px;
+}
+
+.register-upload-footer-text {
+	font-size: 12px;
+	font-family: Benton-Regular;
+	color: #58636c;
+	text-align: center;
+	line-height: 18px;
+	margin-top: 32px;
+	max-width: 343px;
+}
+
+.register-upload-footer-text > a {
+	color: #0069c4;
+	font-family: Benton-Medium;
 }
 
 @media (max-width: 700px) {
