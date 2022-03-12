@@ -1640,6 +1640,7 @@ footer {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 	margin-top: 16px;
+	margin-bottom: 25px;
 	display: flex;
 	max-width: 100%;
 }
@@ -1956,6 +1957,130 @@ footer {
 	margin-right: 9px;
 }
 
+.ud-schedule {
+	flex: 1;
+	max-width: 750px;
+}
+
+.uds-accounts-header {
+	display: flex;
+	align-items: center;
+}
+
+.uds-account-btn {
+	padding: 12px 16px;
+	height: 36px;
+	color: #292e32;
+	border: 1px solid #292e32;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 16px;
+	font-size: 10px;
+	font-family: Benton-Regular;
+	background-color: transparent;
+}
+
+.uds-account-btn.all {
+	background-color: #0069c4;
+	border: 0;
+	color: #fff;
+	font-family: Benton-Medium;
+}
+
+.uds-create-account-btn {
+	padding: 0px;
+	background-color: transparent;
+	margin-left: auto;
+	color: #0069c4;
+	font-family: Benton-Medium;
+	font-size: 18px;
+}
+
+.uds-search-wrapper {
+	margin-top: 32px;
+	margin-bottom: 40px;
+	position: relative;
+	border: 2px solid #c1c7cd;
+	width: 100%;
+	height: 55px;
+	border-radius: 8px;
+	padding: 0px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.uds-search-wrapper > input {
+	border: none;
+	background: transparent;
+	height: 100%;
+	padding: 0px 32px;
+	font-family: Benton-Regular;
+}
+
+.uds-search-label {
+	width: 19px;
+	height: 19px;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	left: 18px;
+	cursor: pointer;
+}
+
+.uds-search-label > img {
+	width: 100%;
+	height: 100%;
+}
+
+.uds-filter-btn {
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	right: 18px;
+	background-color: transparent;
+	padding: 0px;
+}
+
+.uds-filter-btn > img {
+	width: 100%;
+	height: 100%;
+}
+
+.uds-transfer-details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.uds-transfer-details-header {
+	color: #292e32;
+	font-size: 16px;
+	font-family: Benton-Medium;
+}
+
+.uds-td-text {
+	margin: 4px 0px 8px;
+	color: #292e32;
+	font-size: 14px;
+	font-family: Benton-Regular;
+}
+
+.uds-td-date {
+	color: #89959f;
+	font-size: 14px;
+	font-family: Benton-Regular;
+}
+
+.uds-td-amount {
+	color: #FE5F03;
+	font-size: 20px;
+	font-family: Benton-REgular;
+}
+
 @media (max-width: 1280px) {
 	.user-dashboard-wrapper {
 		padding-left: 16px;
@@ -2016,6 +2141,28 @@ footer {
 	.tm-transaction-form {
 		width: 100%;
 		margin-top: 48px;
+	}
+
+	.uds-accounts-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.uds-account-btn {
+		margin-bottom: 16px;
+	}
+
+	.uds-create-account-btn {
+		margin-left: 0px;
+		margin-top: 16px;
+	}
+
+	.uds-transfer-details {
+		flex-direction: column;
+	}
+
+	.uds-td-amount {
+		margin-top: 16px;
 	}
 }
 
