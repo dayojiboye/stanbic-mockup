@@ -1299,7 +1299,8 @@ footer {
 	justify-content: space-between;
 }
 
-.user-dashboard-name {
+.user-dashboard-name,
+.user-dashboard-head {
 	font-family: Benton-Bold;
 	font-size: 32px;
 	color: #001324;
@@ -1497,6 +1498,7 @@ footer {
 .ud-qa-card > img {
 	width: 36px;
 	height: 36px;
+	object-fit: contain;
 }
 
 .ud-qa-card > p {
@@ -1506,6 +1508,7 @@ footer {
 	text-align: center;
 	margin-top: 16px;
 	max-width: 101px;
+	line-height: 16px;
 }
 
 .ud-support-chat {
@@ -1531,6 +1534,31 @@ footer {
 	border-radius: 50%;
 }
 
+.ud-transfer-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+	gap: 24px;
+	width: calc(100% - 339px);
+	height: fit-content;
+}
+
+.ud-transfer-right {
+	margin-left: 44px;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+}
+
+.ud-transfer-right > img {
+	width: 100%;
+	max-width: 339px;
+	margin-bottom: 16px;
+}
+
+.ud-transfer-right > img:last-of-type {
+	margin: 0px;
+}
+
 @media (max-width: 1280px) {
 	.user-dashboard-wrapper {
 		padding-left: 16px;
@@ -1553,9 +1581,27 @@ footer {
 		margin-top: 32px;
 	}
 
-	.ud-quick-actions-grid {
+	.ud-quick-actions-grid,
+	.ud-transfer-grid {
 		width: 100%;
 		justify-content: center;
+	}
+
+	.ud-transfer-right {
+		margin-left: 0px;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.ud-transfer-right > img {
+		margin-bottom: 0px;
+		margin-right: 16px;
+		margin-top: 32px;
+	}
+
+	.ud-transfer-right > img:last-of-type {
+		margin-right: 0px;
+		margin-top: 16px;
 	}
 }
 
@@ -1578,17 +1624,6 @@ footer {
 		margin-top: 16px;
 	}
 }
-
-/* @media (max-width: 700px) {
-	.user-dashboard-account-card-footer {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.user-dashboard-account-card-hide-btn {
-		margin-left: 0;
-	}
-} */
 /* user dashboard styling ends */
 
 /* media queries */
