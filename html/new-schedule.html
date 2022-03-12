@@ -67,35 +67,55 @@
 				<h1 class="user-dashboard-head">Scheduled Transfer</h1>
 				<div class="user-dashboard-content">
 					<div class="ud-schedule">
-						<div class="uds-accounts-header">
-							<button class="uds-account-btn all">All Accounts</button>
-							<button class="uds-account-btn">Savings - 0127639747</button>
-							<button class="uds-account-btn">Current - 4127635379</button>
-							<button class="uds-create-account-btn">+ Create Schedule</button>
+						<div class="ns-header">
+							<h2 class="ns-header-text">New Schedule</h2>
+							<h3 class="ns-header-count">Form 1 of 2</h3>
 						</div>
-						<div class="uds-search-wrapper">
-							<label for="search" class="uds-search-label">
-								<img src="../images/search.svg" alt="" />
-							</label>
-							<input
-								id="search"
-								type="text"
-								placeholder="Search Scheduled Payments"
-							/>
-							<button class="uds-filter-btn">
-								<img src="../images/filter.svg" alt="" />
-							</button>
-						</div>
-						<div class="uds-transfer-details">
-							<div>
-								<h3 class="uds-transfer-details-header">Receptionist Salary</h3>
-								<p class="uds-td-text">
-									Appiah Jackie | Monthly(Once a month) | Bank Transfer
-								</p>
-								<p class="uds-td-date">28 January 2022 - 28 December 2022</p>
+						<form class="ns-form register-form">
+							<input type="text" placeholder="Schedule Name" class="ns-input" />
+							<div class="login-input-wrapper select mb-24">
+								<label for="">Payment Type</label>
+								<select name="" id="">
+									<option value="male">Bills and Payments</option>
+								</select>
 							</div>
-							<div class="uds-td-amount">₵73,000</div>
-						</div>
+							<div class="login-input-wrapper select mb-24">
+								<label for="">Account to Debit</label>
+								<select name="" id="">
+									<option value="male">
+										Mensah Osei - 0127639747 - ₵500,000.11
+									</option>
+								</select>
+							</div>
+							<div class="personal-info-form-grid">
+								<div class="login-input-wrapper select">
+									<label for="">Payment Type</label>
+									<select name="" id="">
+										<option value="male">Monthly</option>
+										<option value="male">Quartely</option>
+										<option value="male">Annually</option>
+									</select>
+								</div>
+								<div class="login-input-wrapper select">
+									<label for="">Frequency</label>
+									<select name="" id="">
+										<option value="male">Twice a month</option>
+									</select>
+								</div>
+								<div class="login-input-wrapper scheduled-date-picker">
+									<label for="">Start Date</label>
+									<input type="text" value="28/02/2022" />
+								</div>
+								<div class="login-input-wrapper scheduled-date-picker">
+									<label for="">End Date</label>
+									<input type="text" value="31/12/2022" />
+								</div>
+							</div>
+							<div class="ns-form-footer">
+								<button class="button-medium button-primary">Next</button>
+								<a>All Scheduled Payments</a>
+							</div>
+						</form>
 					</div>
 					<div class="ud-transfer-right">
 						<img src="../images/stanbic_image_3.png" alt="" />

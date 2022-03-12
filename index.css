@@ -896,6 +896,20 @@ footer {
 	z-index: 2;
 }
 
+.register-form .login-input-wrapper.scheduled-date-picker::after {
+	content: "";
+	background-image: url("./images/scheduled_calendar.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 21px;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+
 .register-form > button {
 	margin-top: 48px;
 }
@@ -2076,9 +2090,65 @@ footer {
 }
 
 .uds-td-amount {
-	color: #FE5F03;
+	color: #fe5f03;
 	font-size: 20px;
 	font-family: Benton-REgular;
+}
+
+.ns-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ns-header-text {
+	color: #58636c;
+	font-size: 18px;
+	font-family: Benton-Medium;
+}
+
+.ns-header-count {
+	color: #fe5f03;
+	font-size: 18px;
+	font-family: Benton-Medium;
+}
+
+.ns-form {
+	margin-top: 24px;
+	max-width: 100%;
+}
+
+.ns-form select {
+	border: 0;
+}
+
+.ns-input {
+	color: #001324;
+	font-size: 18px;
+	font-family: Benton-Medium;
+	border: 2px solid #c1c7cd;
+	border-radius: 8px;
+	background-color: transparent;
+	padding: 16px;
+	height: 80px;
+	margin-bottom: 24px;
+}
+
+.ns-form-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 48px;
+}
+
+.ns-form-footer > button {
+	width: 332px;
+}
+
+.ns-form-footer > a {
+	color: #0069c4;
+	font-size: 18px;
+	font-family: Benton-Medium;
 }
 
 @media (max-width: 1280px) {
@@ -2201,6 +2271,16 @@ footer {
 	.ud-new-beneficiary-form-footer > label,
 	.ud-new-beneficiary-form-footer > a {
 		margin-top: 16px;
+	}
+
+	.ns-form-footer {
+		flex-direction: column;
+	}
+
+	.ns-form-footer > a {
+		width: fit-content;
+		display: block;
+		margin-top: 18px;
 	}
 }
 /* user dashboard styling ends */
