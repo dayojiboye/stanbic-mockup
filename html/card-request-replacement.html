@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../index.css" />
+		<script src="https://kit.fontawesome.com/7de8e7b2fc.js" crossorigin="anonymous"></script>
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<header class="user-dashboard-header">
+			<div class="ud-header-wrapper">
+				<div class="user-dashboard-logo">
+					<img src="../images/stanbic_small.png" alt="stanbic" />
+				</div>
+				<nav class="user-dashboard-nav">
+					<ul class="user-dashboard-nav-links">
+						<li class="">
+							<a href="">Dashboard</a>
+						</li>
+						<li class="">
+							<a href="">Transfers</a>
+						</li>
+						<li class="">
+							<a href="">Bills Payment</a>
+						</li>
+						<li class="">
+							<a href="">Airtime/Data Purchase</a>
+						</li>
+						<li class="active">
+							<a href="">Cards</a>
+						</li>
+						<li class="">
+							<a href="">Accounts</a>
+						</li>
+						<li class="">
+							<a href="">More Services</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="user-dashboard-actions">
+					<button class="user-dashboard-notifications">
+						<img src="../images/bell.svg" alt="" />
+					</button>
+					<button class="user-dashboard-profile-dropdown">
+						<img
+							src="../images/user_avatar.png"
+							alt="user"
+							class="user-dashboard-avatar"
+						/>
+						<img
+							src="../images/chevron_down_big_black.svg"
+							alt=""
+							class="user-dashboard-dropdown-icon"
+						/>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="user-dashboard">
+			<div class="user-dashboard-wrapper">
+				<a class="ud-go-back">
+					<img src="../images/arrow-left.svg" alt="" />
+					<span>Back to Accounts</span></a
+				>
+				<h1 class="user-dashboard-head">Card Request & Replacement</h1>
+				<div class="user-dashboard-content">
+					<div class="ud-schedule">
+						<div class="mobile-topup-content-wrapper">
+							<div class="uds-accounts-header">
+								<button class="uds-account-btn">Card Request</button>
+								<button class="uds-account-btn selected">Card Replacement</button>
+							</div>
+							<form class="ns-form register-form">
+								<div class="login-input-wrapper select mb-24">
+									<label for="">Card Type</label>
+									<select name="" id="">
+										<option value="male">MasterCard</option>
+									</select>
+								</div>
+								<div class="login-input-wrapper select mb-24">
+									<label for="">Account to Debit</label>
+									<select name="" id="">
+										<option value="male">
+											Mensah Osei - 0127639747 - ₵500,000.11
+										</option>
+									</select>
+								</div>
+								<div class="login-input-wrapper select">
+									<label for="">Select Pickup Branch</label>
+									<select name="" id="">
+										<option value="male">Graphic Road Branch</option>
+									</select>
+								</div>
+								<label for="send-via-courier" class="cr-send-via-courier-label">
+									<input
+										type="checkbox"
+										id="send-via-courier"
+										class="cr-send-via-courier-checkbox"
+									/>
+									Send via Courier
+								</label>
+								<div class="cr-important-notice">
+									<h4 class="cr-in-header">IMPORTANT NOTICE</h4>
+									<p class="cr-in-text">
+										Please note that the Bank will not be under any obligation
+										to investigate unauthorized usage of this module. It is
+										therefore advised that the Internet Banking ID, password and
+										token be kept securely and not disclosed to a third party.
+									</p>
+									<h4 class="cr-in-charged-amount">
+										You will be charged <span>₵150.00</span> for this
+										transaction
+									</h4>
+								</div>
+								<div class="ns-form-footer">
+									<button class="button-medium button-primary">Submit</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="ud-transfer-right">
+						<img src="../images/stanbic_image_6.png" alt="" />
+						<img src="../images/stanbic_image_7.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="ud-support-chat">
+				<button>
+					<img src="../images/chat_bubble.svg" alt="" />
+				</button>
+			</div>
+		</main>
+	</body>
+</html>
