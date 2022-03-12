@@ -1976,6 +1976,11 @@ footer {
 	max-width: 750px;
 }
 
+.mobile-topup-content {
+	flex: 1;
+	max-width: 750px;
+}
+
 .uds-accounts-header {
 	display: flex;
 	align-items: center;
@@ -2151,6 +2156,52 @@ footer {
 	font-family: Benton-Medium;
 }
 
+.mobile-networks {
+	display: grid;
+	margin-top: 16px;
+	grid-template-columns: repeat(auto-fit, minmax(87px, 1fr));
+	gap: 13px 0px;
+}
+
+.mobile-networks > button {
+	width: 87px;
+	height: 87px;
+	padding: 0px;
+	background-color: transparent;
+	border-radius: 4px;
+}
+
+.mobile-networks > button.selected-network {
+	border: 1px solid #0069c4;
+}
+
+.mobile-networks > button > img {
+	width: 100%;
+	height: 100%;
+}
+
+.selected-check {
+	margin-top: 9px;
+	display: flex;
+	align-items: center;
+	color: #0069c4;
+	font-size: 12px;
+	font-family: Benton-Medium;
+	cursor: pointer;
+	width: fit-content;
+}
+
+.selected-check > input {
+	height: 12px;
+	width: 12px;
+	margin-bottom: 5px;
+	margin-right: 6px;
+}
+
+.mobile-topup-content-wrapper {
+	width: 90%;
+}
+
 @media (max-width: 1280px) {
 	.user-dashboard-wrapper {
 		padding-left: 16px;
@@ -2233,6 +2284,10 @@ footer {
 
 	.uds-td-amount {
 		margin-top: 16px;
+	}
+
+	.mobile-topup-content-wrapper {
+		width: 100%;
 	}
 }
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../index.css" />
+		<script src="https://kit.fontawesome.com/7de8e7b2fc.js" crossorigin="anonymous"></script>
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<header class="user-dashboard-header">
+			<div class="ud-header-wrapper">
+				<div class="user-dashboard-logo">
+					<img src="../images/stanbic_small.png" alt="stanbic" />
+				</div>
+				<nav class="user-dashboard-nav">
+					<ul class="user-dashboard-nav-links">
+						<li class="">
+							<a href="">Dashboard</a>
+						</li>
+						<li class="">
+							<a href="">Transfers</a>
+						</li>
+						<li class="active">
+							<a href="">Bills Payment</a>
+						</li>
+						<li class="">
+							<a href="">Airtime/Data Purchase</a>
+						</li>
+						<li class="">
+							<a href="">Cards</a>
+						</li>
+						<li class="">
+							<a href="">Accounts</a>
+						</li>
+						<li class="">
+							<a href="">More Services</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="user-dashboard-actions">
+					<button class="user-dashboard-notifications">
+						<img src="../images/bell.svg" alt="" />
+					</button>
+					<button class="user-dashboard-profile-dropdown">
+						<img
+							src="../images/user_avatar.png"
+							alt="user"
+							class="user-dashboard-avatar"
+						/>
+						<img
+							src="../images/chevron_down_big_black.svg"
+							alt=""
+							class="user-dashboard-dropdown-icon"
+						/>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="user-dashboard">
+			<div class="user-dashboard-wrapper">
+				<a class="ud-go-back">
+					<img src="../images/arrow-left.svg" alt="" />
+					<span>Back to Bills and Payments</span></a
+				>
+				<h1 class="user-dashboard-head">Mobile Top-up</h1>
+				<div class="user-dashboard-content">
+					<div class="mobile-topup-content">
+						<div class="mobile-topup-content-wrapper">
+							<div class="ns-header">
+								<h2 class="ns-header-text">Select Network</h2>
+							</div>
+							<div class="mobile-networks">
+								<button class="selected-network">
+									<img src="../images/vodafone.png" alt="" />
+								</button>
+								<button><img src="../images/mtn.png" alt="" /></button>
+								<button class="selected-network">
+									<img src="../images/tigo.png" alt="" />
+								</button>
+								<button><img src="../images/expresso.png" alt="" /></button>
+								<button><img src="../images/airtel.png" alt="" /></button>
+								<button><img src="../images/glo.png" alt="" /></button>
+								<button class="selected-network">
+									<img src="../images/surfine.png" alt="" />
+								</button>
+							</div>
+							<label for="selected-network" class="selected-check">
+								<input type="checkbox" id="selected-network" checked />
+								Selected
+							</label>
+							<form class="ns-form register-form">
+								<div class="login-input-wrapper select mb-24">
+									<label for="">Account to Debit</label>
+									<select name="" id="">
+										<option value="male">
+											Mensah Osei - 0127639747 - ₵500,000.11
+										</option>
+									</select>
+								</div>
+								<div class="personal-info-form-grid">
+									<div class="login-input-wrapper">
+										<label for="">Mobile Number</label>
+										<input type="text" value="0302758364" />
+									</div>
+									<div class="login-input-wrapper">
+										<label for="">Top-up Amount</label>
+										<input type="text" value="₵3,000" />
+									</div>
+								</div>
+								<div class="ns-form-footer">
+									<button class="button-medium button-primary">Continue</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="ud-transfer-right">
+						<img src="../images/stanbic_image_4.png" alt="" />
+						<img src="../images/stanbic_image_5.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="ud-support-chat">
+				<button>
+					<img src="../images/chat_bubble.svg" alt="" />
+				</button>
+			</div>
+		</main>
+	</body>
+</html>
