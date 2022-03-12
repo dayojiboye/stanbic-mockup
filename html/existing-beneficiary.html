@@ -140,7 +140,7 @@
 							<p class="tm-transaction-name">Owusu Appiah</p>
 							<div class="tm-account-number">Stanbic Bank - 0001039711</div>
 						</div>
-						<form class="tm-transaction-form">
+						<form class="tm-transaction-form" id="tm-transaction-form">
 							<img src="../images/confirm.png" alt="" />
 							<h4 class="tm-transaction-form-header">
 								Enter OTP code to confirm transaction
@@ -149,13 +149,55 @@
 							<p class="tm-transaction-request-token">
 								Don’t have token? <a>Request OTP</a>
 							</p>
-							<button class="button-xl button-primary">Submit</button>
+							<button class="button-xl button-primary" id="confirm-transfer-button">
+								Submit
+							</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Confirm Transaction Modal Ends -->
+		<!-- Transfer Success Modal Starts -->
+		<div class="transaction-modal" id="transfer-success-modal">
+			<div class="tm-close-btn">
+				<button id="tm-success-close-btn">
+					<img src="../images/close_modal.svg" alt="" />
+				</button>
+			</div>
+			<div class="tm-content">
+				<div class="tm-content-wrapper">
+					<div class="tm-transaction">
+						<div class="tm-transaction-info">
+							<p class="tm-transaction-name">Mensah Appiah</p>
+							<p class="tm-balance">Balance - GH₵ 500,000</p>
+							<div class="tm-account-number">Savings Account - 0127639747</div>
+							<div class="tm-transaction-amount-wrapper">
+								<h2 class="tm-transaction-amount"><span>GH₵</span> 20,000</h2>
+								<img src="../images/line1.svg" alt="" />
+							</div>
+							<p class="tm-transaction-name">Owusu Appiah</p>
+							<div class="tm-account-number">Stanbic Bank - 0001039711</div>
+						</div>
+						<div class="tm-transaction-form success">
+							<img src="../images/checked_success.png" alt="" />
+							<h4 class="tm-transaction-form-header">Transfer Successful</h4>
+							<button
+								class="button-xl button-primary close"
+								id="transfer-success-close"
+							>
+								Close
+							</button>
+							<button class="tm-download-btn">
+								<img src="../images/download.svg" alt="" />
+								Download Receipt
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Transfer Success Modal Ends -->
 		<!-- Transaction Modals Ends -->
 	</body>
 </html>

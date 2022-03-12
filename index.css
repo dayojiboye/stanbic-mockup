@@ -1745,6 +1745,7 @@ footer {
 	width: 100%;
 	z-index: 300;
 	display: none;
+	overflow-y: auto;
 }
 
 .transaction-modal.show {
@@ -1804,17 +1805,21 @@ footer {
 	border-radius: 0px 0px 8px 8px;
 	background-color: #f5faff;
 	overflow-y: auto;
-	padding: 82px 0px 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	height: 531px;
 }
 
 .tm-transaction {
 	width: 100%;
 	margin: 0 auto;
-	max-width: 650px;
+	max-width: 700px;
 	display: flex;
 	justify-content: space-between;
 	padding: 16px;
+	align-items: center;
 }
 
 .tm-transaction-name {
@@ -1894,6 +1899,11 @@ footer {
 	margin-bottom: 18px;
 }
 
+.tm-transaction-form.success > img {
+	width: 148px;
+	height: 148px;
+}
+
 .tm-transaction-form-header {
 	color: #001324;
 	font-size: 14px;
@@ -1925,6 +1935,25 @@ footer {
 .tm-transaction-request-token > a {
 	color: #0069c4;
 	font-family: Benton-Medium;
+}
+
+.tm-transaction-form > button.close {
+	margin-top: 43px;
+}
+
+.tm-download-btn {
+	padding: 0px;
+	color: #0069c4;
+	font-size: 17px;
+	font-family: Benton-Medium;
+	display: flex;
+	margin-top: 27px;
+	background-color: transparent;
+	align-items: center;
+}
+
+.tm-download-btn > img {
+	margin-right: 9px;
 }
 
 @media (max-width: 1280px) {
@@ -1976,9 +2005,7 @@ footer {
 	.tm-transaction {
 		flex-direction: column;
 		overflow-y: auto;
-		padding-left: 16px;
-		padding-right: 16px;
-		/* background-color: red; */
+		padding: 50px 16px;
 	}
 
 	.tm-account-number {
