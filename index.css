@@ -1685,7 +1685,7 @@ footer {
 	color: #58636c;
 	font-size: 14px;
 	font-family: Benton-Medium;
-	margin: 24px 0px;
+	margin: 16px 0px 24px;
 }
 
 .ud-beneficiary-remarks {
@@ -1703,7 +1703,8 @@ footer {
 	align-items: center;
 }
 
-.ud-new-beneficiary-form-footer > label {
+.ud-new-beneficiary-form-footer > label,
+.ud-new-beneficiary-form-footer > a {
 	color: #0069c4;
 	font-size: 15px;
 	font-family: Benton-Medium;
@@ -1717,6 +1718,14 @@ footer {
 	height: 24px !important;
 	margin-bottom: 7px;
 	margin-right: 12px;
+}
+
+.ud-beneficiaries > .register-form {
+	margin-top: 0px;
+}
+
+.ud-beneficiaries > .register-form > .personal-info-form-grid {
+	margin-bottom: 0px;
 }
 
 @media (max-width: 1280px) {
@@ -1796,7 +1805,8 @@ footer {
 		width: 100%;
 	}
 
-	.ud-new-beneficiary-form-footer > label {
+	.ud-new-beneficiary-form-footer > label,
+	.ud-new-beneficiary-form-footer > a {
 		margin-top: 16px;
 	}
 }
