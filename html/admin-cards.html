@@ -26,13 +26,13 @@
 							Overview
 						</a>
 					</li>
-					<li class="admin-nav-menu-item active">
+					<li class="admin-nav-menu-item">
 						<a>
 							<img src="../images/admin_accounts.svg" alt="" />
 							Accounts
 						</a>
 					</li>
-					<li class="admin-nav-menu-item">
+					<li class="admin-nav-menu-item active">
 						<a>
 							<img src="../images/admin_cards.svg" alt="" />
 							Cards
@@ -122,66 +122,12 @@
 				</div>
 			</div>
 			<div class="am-content">
-				<a class="admin-back-link">
-					<img src="../images/arrow-left.svg" alt="" />
-					Back to Accounts
-				</a>
-				<div class="am-heading-wrap">
-					<h1 class="am-content-heading">
-						<img src="../images/jane.png" alt="" />
-						Adekorafo Ikhlas
-					</h1>
-					<button class="button-secondary-transparent quick-action-btn">
-						Quick Action
-					</button>
-				</div>
-				<div class="amth-accts">
-					<div class="amth-accts-card">
-						<div class="amthac-icon">
-							<img src="../images/orange_receipt.svg" alt="" />
-						</div>
-						<div>
-							<p class="amthc-type">Savings (4127635379)</p>
-							<h5 class="amthc-amount">₵50,000,000</h5>
-						</div>
-					</div>
-					<div class="amth-accts-card">
-						<div class="amthac-icon">
-							<img src="../images/orange_current.svg" alt="" />
-						</div>
-						<div>
-							<p class="amthc-type">Current (0127639747)</p>
-							<h5 class="amthc-amount">₵192,050,000</h5>
-						</div>
-					</div>
-					<div class="amth-accts-card">
-						<div class="amthac-icon">
-							<img src="../images/orange_receipt.svg" alt="" />
-						</div>
-						<div>
-							<p class="amthc-type">Joint (0226018889)</p>
-							<h5 class="amthc-amount">₵7,000,000</h5>
-						</div>
-					</div>
-					<div class="amth-accts-card">
-						<div class="amthac-icon">
-							<img src="../images/orange_current.svg" alt="" />
-						</div>
-						<div>
-							<p class="amthc-type">Domiciliary (1727633684)</p>
-							<h5 class="amthc-amount">₵90,250,000</h5>
-						</div>
-					</div>
-				</div>
-				<div class="am-tabs mt-0">
-					<div class="am-tabs-header account-variant">
+				<h1 class="am-content-heading">Cards</h1>
+				<div class="am-tabs">
+					<div class="am-tabs-header">
 						<ul class="amth-list">
-							<li class="active">Transfers</li>
-							<li>Beneficiaries</li>
-							<li>Transaction History</li>
-							<li>Request</li>
-							<li>Bills Payment</li>
-							<li>Scheduled Payment</li>
+							<li class="active">Card Replacements</li>
+							<li class="">Card Request</li>
 						</ul>
 					</div>
 					<div class="amth-actions">
@@ -192,7 +138,7 @@
 								</label>
 								<input
 									type="text"
-									placeholder="Search Transfers"
+									placeholder="Search Accounts"
 									id="search-accounts"
 								/>
 							</div>
@@ -213,6 +159,9 @@
 										<option value="Filter By">Bulk Action</option>
 									</select>
 								</div>
+								<button class="button-small button-secondary amth-btn">
+									Add New
+								</button>
 							</div>
 						</div>
 					</div>
@@ -225,16 +174,23 @@
 									</th>
 									<th>
 										<div class="amth-sort">
-											Beneficiary
+											Account Holder
 											<button>
 												<img src="../images/sort_black.svg" alt="" />
 											</button>
 										</div>
 									</th>
 									<th>Account no</th>
-									<th>Transfer Type</th>
-									<th>Amount</th>
-									<th colspan="2">Transaction Time</th>
+									<th>
+										<div class="amth-sort">
+											Card Type
+											<button>
+												<img src="../images/sort_black.svg" alt="" />
+											</button>
+										</div>
+									</th>
+									<th>Request Date</th>
+									<th colspan="2">Status</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -242,16 +198,11 @@
 									<td>
 										<input type="checkbox" />
 									</td>
-									<td>
-										<div class="amth-act-holder">
-											<img src="../images/mariam.png" alt="" />
-											Abina Acheampong
-										</div>
-									</td>
-									<td>2747473579</td>
-									<td>Stanbic</td>
-									<td>₵7,000.00</td>
-									<td>12:08 PM</td>
+									<td>Asare Jackie</td>
+									<td>3497494393</td>
+									<td>MasterCard</td>
+									<td>Feb 28, 2022 - 12:03PM</td>
+									<td class="amth-table-status">Unattended</td>
 									<td class="amth-table-menu">
 										<button>
 											<img src="../images/more_horiz.svg" alt="" />
@@ -262,16 +213,11 @@
 									<td>
 										<input type="checkbox" />
 									</td>
-									<td>
-										<div class="amth-act-holder">
-											<img src="../images/jane.png" alt="" />
-											Adekorafo Ikhlas
-										</div>
-									</td>
-									<td>7643348431</td>
-									<td>Stanbic</td>
-									<td>₵7,000.00</td>
-									<td>Feb 01, 2022 - 09:01PM</td>
+									<td>986745907821</td>
+									<td>2486426847</td>
+									<td>Visa</td>
+									<td>Feb 24, 2022 - 01:04AM</td>
+									<td class="amth-table-status in-progress">In Progress</td>
 									<td class="amth-table-menu">
 										<button>
 											<img src="../images/more_horiz.svg" alt="" />
@@ -282,16 +228,26 @@
 									<td>
 										<input type="checkbox" />
 									</td>
-									<td>
-										<div class="amth-act-holder">
-											<img src="../images/john.png" alt="" />
-											Nkrumah Majid
-										</div>
+									<td>376980958737</td>
+									<td>0002737668</td>
+									<td>MasterCard</td>
+									<td>Feb 19, 2022 - 11:43AM</td>
+									<td class="amth-table-status awaiting">Awaiting Pickup</td>
+									<td class="amth-table-menu">
+										<button>
+											<img src="../images/more_horiz.svg" alt="" />
+										</button>
 									</td>
-									<td>7274775739</td>
-									<td>Local Bank</td>
-									<td>₵7,000.00</td>
-									<td>03:51 PM</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" />
+									</td>
+									<td>028386468234</td>
+									<td>0234567018</td>
+									<td>MasterCard</td>
+									<td>Feb 18, 2022 - 03:34PM</td>
+									<td class="amth-table-status in-progress">In Progress</td>
 									<td class="amth-table-menu">
 										<button>
 											<img src="../images/more_horiz.svg" alt="" />
@@ -300,6 +256,10 @@
 								</tr>
 							</tbody>
 						</table>
+					</div>
+					<!-- loader -->
+					<div class="admin-loader">
+						<img src="../images/loader.svg" alt="" />
 					</div>
 				</div>
 			</div>

@@ -2828,6 +2828,14 @@ footer {
 	margin: 0 50px;
 }
 
+.am-tabs-header.account-variant > .amth-list {
+	padding: 0px;
+}
+
+.am-tabs-header.account-variant > .amth-list > li {
+	margin-right: 16px;
+}
+
 .amth-list {
 	padding-left: 50px;
 	display: flex;
@@ -2851,6 +2859,8 @@ footer {
 	position: relative;
 	text-align: center;
 	white-space: nowrap;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 .amth-list > li.active {
@@ -2862,25 +2872,11 @@ footer {
 	content: "";
 	background-color: #0069c4;
 	position: absolute;
-	width: 130px;
-	height: 1px;
+	width: 100%;
+	height: 2px;
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-}
-
-.amth-list.account-variant {
-	padding: 0;
-}
-
-.amth-list.account-variant > li {
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-right: 16px;
-}
-
-.amth-list.account-variant > li.active::after {
-	width: 100%;
 }
 
 .amth-actions {
@@ -3035,7 +3031,8 @@ footer {
 
 .amth-table th:first-of-type,
 .amth-table td:first-of-type {
-	width: 50px;
+	width: 70px;
+	padding-left: 16px;
 }
 
 .amth-table th:nth-of-type(6),
@@ -3074,6 +3071,21 @@ footer {
 	color: #001324;
 	font-family: Benton-Regular;
 	font-size: 16px;
+}
+
+.amth-table .amth-table-status {
+	color: #292e32;
+	font-family: Benton-Medium;
+}
+
+.amth-table .amth-table-status.in-progress {
+	color: #0069c4;
+	font-family: Benton-Medium;
+}
+
+.amth-table .amth-table-status.awaiting {
+	color: #fe5f03;
+	font-family: Benton-Medium;
 }
 
 .amth-table td,
@@ -3116,7 +3128,8 @@ footer {
 }
 
 .amth-table-menu {
-	width: fit-content;
+	width: 50px;
+	padding-right: 16px;
 }
 
 .amth-table-menu > button {
@@ -3126,7 +3139,7 @@ footer {
 }
 
 .admin-loader {
-	margin-top: 23px;
+	margin-top: 72px;
 	display: flex;
 	justify-content: center;
 }
