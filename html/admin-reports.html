@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../index.css" />
+		<script src="https://kit.fontawesome.com/7de8e7b2fc.js" crossorigin="anonymous"></script>
+		<title>Admin Dashboard</title>
+	</head>
+	<body>
+		<nav class="admin-nav">
+			<div class="admin-nav-header">
+				<img src="../images/stanbic_small.png" alt="" />
+				<div class="admin-nav-header-info">
+					<h3>Stanbic IBTC</h3>
+					<p>Admin</p>
+				</div>
+			</div>
+			<div class="admin-nav-menu">
+				<h3 class="admin-nav-sub-header">MENU</h3>
+				<ul class="admin-nav-menu-list">
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_overview.svg" alt="" />
+							Overview
+						</a>
+					</li>
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_accounts.svg" alt="" />
+							Accounts
+						</a>
+					</li>
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_cards.svg" alt="" />
+							Cards
+						</a>
+					</li>
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_requests.svg" alt="" />
+							Requests
+						</a>
+					</li>
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_complaints.svg" alt="" />
+							Complaints
+						</a>
+					</li>
+					<li class="admin-nav-menu-item active">
+						<a>
+							<img src="../images/admin_reports.svg" alt="" />
+							Reports
+						</a>
+					</li>
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_merchants.svg" alt="" />
+							Merchants
+						</a>
+					</li>
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_rewards.svg" alt="" />
+							Rewards
+						</a>
+					</li>
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_branches.svg" alt="" />
+							Branches
+						</a>
+					</li>
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_atms.svg" alt="" />
+							ATMS
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="admin-nav-end">
+				<h3 class="admin-nav-sub-header">YOUR ACCOUNT</h3>
+				<ul class="admin-nav-menu-list">
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_account.svg" alt="" />
+							Account
+						</a>
+					</li>
+					<li class="admin-nav-menu-item">
+						<a>
+							<img src="../images/admin_support.svg" alt="" />
+							Help & Support
+						</a>
+					</li>
+					<li class="admin-nav-menu-item">
+						<button>
+							<img src="../images/admin_logout.svg" alt="" />
+							Log Out
+						</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main class="admin-main">
+			<div class="admin-main-header">
+				<div class="am-search-wrapper">
+					<label for="search">
+						<img src="../images/search_grey.svg" alt="" />
+					</label>
+					<input type="text" placeholder="Tap to search" id="search" />
+				</div>
+				<div class="am-notification">
+					<button class="am-notification-btn">
+						<img src="../images/bell.svg" alt="" />
+						<span></span>
+					</button>
+				</div>
+			</div>
+			<div class="am-content">
+				<div class="am-heading-wrap">
+					<h1 class="am-content-heading">Reports</h1>
+				</div>
+				<div class="am-show-analytics-view">
+					<a class="">
+						Show Analytics View
+						<img src="../images/arrow_right.svg" alt="" />
+					</a>
+					<div class="amsa-groups">
+						<div class="amsa-filter-wrapper focused">
+							<select name="" id="">
+								<option value="">Today</option>
+							</select>
+						</div>
+						<div class="amsa-filter-wrapper">
+							<select name="" id="">
+								<option value="">Filter By</option>
+							</select>
+						</div>
+						<div class="amsa-filter-wrapper">
+							<select name="" id="">
+								<option value="">Export As</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="amth-accts">
+					<div class="amth-accts-card">
+						<div class="amthac-icon">
+							<img src="../images/orange_receipt.svg" alt="" />
+						</div>
+						<div>
+							<p class="amthc-type">Total Deposit</p>
+							<h5 class="amthc-amount">₵50,000,000</h5>
+						</div>
+					</div>
+					<div class="amth-accts-card">
+						<div class="amthac-icon">
+							<img src="../images/orange_current.svg" alt="" />
+						</div>
+						<div>
+							<p class="amthc-type">Total Withdrawal</p>
+							<h5 class="amthc-amount">₵192,050,000</h5>
+						</div>
+					</div>
+					<div class="amth-accts-card">
+						<div class="amthac-icon">
+							<img src="../images/orange_receipt.svg" alt="" />
+						</div>
+						<div>
+							<p class="amthc-type">Highest Deposit</p>
+							<h5 class="amthc-amount">₵7,000,000</h5>
+						</div>
+					</div>
+					<div class="amth-accts-card">
+						<div class="amthac-icon">
+							<img src="../images/orange_current.svg" alt="" />
+						</div>
+						<div>
+							<p class="amthc-type">Highest Withdrawal</p>
+							<h5 class="amthc-amount">₵90,250,000</h5>
+						</div>
+					</div>
+				</div>
+				<div class="am-tabs">
+					<div class="am-tabs-header account-variant">
+						<ul class="amth-list">
+							<li class="active">Transactions</li>
+							<li>Accounts</li>
+							<li>Requests</li>
+							<li>Merchants</li>
+							<li>Active Users</li>
+							<li>Branches</li>
+							<li>ATM</li>
+						</ul>
+					</div>
+					<div class="amth-table-wrap">
+						<table class="amth-table">
+							<thead>
+								<tr>
+									<th>
+										<input type="checkbox" />
+									</th>
+									<th>
+										<div class="amth-sort">
+											Account Holder
+											<button>
+												<img src="../images/sort_black.svg" alt="" />
+											</button>
+										</div>
+									</th>
+									<th>Account no</th>
+									<th>Type</th>
+									<th>Mode</th>
+									<th colspan="2">Transaction Time</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input type="checkbox" />
+									</td>
+									<td>
+										<div class="amth-act-holder">
+											<img src="../images/mariam.png" alt="" />
+											Abina Acheampong
+										</div>
+									</td>
+									<td>2747473579</td>
+									<td>Deposit</td>
+									<td>Card</td>
+									<td>12:08 PM</td>
+									<td class="amth-table-menu">
+										<button>
+											<img src="../images/more_horiz.svg" alt="" />
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" />
+									</td>
+									<td>
+										<div class="amth-act-holder">
+											<img src="../images/jane.png" alt="" />
+											Adekorafo Ikhlas
+										</div>
+									</td>
+									<td>7643348431</td>
+									<td>Withdrawal</td>
+									<td>Cash</td>
+									<td>03:45 PM</td>
+									<td class="amth-table-menu">
+										<button>
+											<img src="../images/more_horiz.svg" alt="" />
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" />
+									</td>
+									<td>
+										<div class="amth-act-holder">
+											<img src="../images/john.png" alt="" />
+											Nkrumah Majid
+										</div>
+									</td>
+									<td>7274775739</td>
+									<td>Withdrawal</td>
+									<td>Card</td>
+									<td>03:51 PM</td>
+									<td class="amth-table-menu">
+										<button>
+											<img src="../images/more_horiz.svg" alt="" />
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- loader -->
+					<div class="admin-loader">
+						<img src="../images/loader.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
