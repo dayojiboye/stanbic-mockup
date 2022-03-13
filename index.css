@@ -3304,6 +3304,255 @@ footer {
 	background-image: url("./images/chevron_down_blue.svg");
 }
 
+.admin-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 300;
+	display: none;
+	overflow-y: auto;
+}
+
+.admin-modal.show {
+	display: block;
+}
+
+.admin-modal-wrapper {
+	max-height: 938px;
+	height: 80vh;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	max-width: 937px;
+	overflow-y: hidden;
+	background-color: #f5faff;
+	display: flex;
+	flex-direction: column;
+}
+
+.admin-modal-header {
+	border-bottom: 1px solid #c1c7cd;
+	padding: 57px 48px 22px;
+}
+
+.admh-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.admh-heading-text {
+	color: #001324;
+	font-family: Benton-Medium;
+	font-size: 32px;
+}
+
+.admh-close-btn {
+	padding: 0;
+	background-color: #c4e0f8;
+	width: 47px;
+	height: 47px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	/* box-shadow: 0px 5px 12px rgb(254 95 3 / 16%); */
+}
+
+.admin-modal-content {
+	padding: 40px 48px 48px;
+	height: calc(100% - 200px);
+	overflow-y: auto;
+}
+
+.admc-tabs-head {
+	display: flex;
+}
+
+.admc-tabs-head > li {
+	font-size: 18px;
+	color: #89959f;
+	font-family: Benton-Regular;
+	margin-right: 23px;
+	flex: 1;
+	position: relative;
+	border-bottom: 4px solid #c1c7cd;
+	padding-bottom: 14px;
+	cursor: pointer;
+	line-height: 1.6;
+}
+
+.admc-tabs-head > li.active {
+	color: #0069c4;
+	font-family: Benton-Medium;
+	border-bottom: 4px solid #0069c4;
+}
+
+.admc-tabs-head > li:last-of-type {
+	margin-right: 0px;
+}
+
+.branch-info-form {
+	max-width: 100%;
+	margin-top: 48px;
+}
+
+.admc-branch-photo-text {
+	margin-bottom: 26px;
+	color: #001324;
+	font-size: 16px;
+	font-family: Benton-Medium;
+}
+
+.admc-branch-photo-text > span {
+	font-family: Benton-Regular;
+	color: #58636c;
+}
+
+.admc-photos-placeholder {
+	display: flex;
+}
+
+.admc-placeholder {
+	flex: 1;
+	margin-right: 26px;
+	background-color: rgba(0, 105, 196, 0.15);
+	border: 1px dashed #0069c4;
+	border-radius: 8px;
+	height: 120px;
+	cursor: pointer;
+}
+
+.admc-placeholder:last-of-type {
+	margin-right: 0px;
+}
+
+.admin-modal-footer {
+	flex: 1;
+	padding: 48px;
+}
+
+.admin-modal-footer.flex {
+	display: flex;
+	align-items: center;
+}
+
+.admin-modal-footer.flex > button {
+	flex: 1;
+}
+
+.admin-modal-footer.flex > button:last-of-type {
+	margin-left: 23px;
+}
+
+.admc-review-header {
+	color: #292e32;
+	font-family: Benton-Medium;
+	font-size: 24px;
+	margin: 40px 0px 24px;
+}
+
+.admc-details {
+	border-top: 1px solid #c1c7cd;
+	margin-bottom: 40px;
+}
+
+.admc-details-wrapper {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #c1c7cd;
+}
+
+.admc-details-header {
+	color: #292e32;
+	font-family: Benton-Medium;
+	font-size: 14px;
+	width: 300px;
+	padding: 24px;
+	text-transform: uppercase;
+}
+
+.admc-details-text {
+	color: #58636c;
+	font-size: 14px;
+	font-family: Benton-Regular;
+	padding: 24px 32px;
+	border-left: 1px solid #c1c7cd;
+}
+
+.admc-photos {
+	margin-right: 26px;
+	flex: 1;
+}
+
+.admc-photos:last-of-type {
+	margin-right: 0px;
+}
+
+.admc-photos > img {
+	width: 263px;
+	height: 263px;
+	border-radius: 8px;
+}
+
+.admh-sub-header {
+	color: #fe5f03;
+	font-family: Benton-Medium;
+	font-size: 16px;
+	margin-top: 16px;
+}
+
+/* .accounts-modal .admin-modal-wrapper {
+	overflow-y: auto;
+} */
+
+/* .accounts-modal .admin-modal-content {
+	height: 100%;
+	overflow-y: initial;
+	padding-top: 0px;
+}
+
+.accounts-modal .admin-modal-footer {
+	height: auto;
+} */
+
+.accounts-modal .admc-details {
+	border: 0;
+}
+
+.admin-accounts-modal-form {
+	max-width: 100%;
+}
+
+.admin-accounts-modal-form-lead {
+	color: #292e32;
+	font-family: Benton-Bold;
+	font-size: 14px;
+}
+
+.request-completed {
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+	color: #0069c4;
+	font-size: 18px;
+	font-family: Benton-Medium;
+	margin-top: 39px;
+	width: fit-content;
+}
+
+.request-completed > input {
+	width: 24px;
+	height: 24px;
+	margin-bottom: 5px;
+	margin-right: 12px;
+}
+
 @media (max-width: 1366px) {
 	.admin-login-left,
 	.admin-login-right {

@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../index.css" />
 		<script src="https://kit.fontawesome.com/7de8e7b2fc.js" crossorigin="anonymous"></script>
+		<script src="../admin-accounts.js" defer></script>
 		<title>Admin Dashboard</title>
 	</head>
 	<body>
@@ -161,7 +162,10 @@
 										<option value="Filter By">Bulk Action</option>
 									</select>
 								</div>
-								<button class="button-small button-secondary amth-btn">
+								<button
+									class="button-small button-secondary amth-btn"
+									id="add-new-account-btn"
+								>
 									Add New
 								</button>
 							</div>
@@ -306,5 +310,65 @@
 				</div>
 			</div>
 		</main>
+		<!-- Modal -->
+		<div class="admin-modal accounts-modal" id="admin-accounts-modal">
+			<div class="admin-modal-wrapper" id="admin-accounts-modal-wrapper">
+				<div class="admin-modal-header">
+					<div class="admh-heading">
+						<h1 class="admh-heading-text">Adekorafo Ikhlas</h1>
+						<button id="accounts-modal-close-btn" class="admh-close-btn">
+							<img src="../images/close_modal.svg" alt="" />
+						</button>
+					</div>
+					<h3 class="admh-sub-header">Card Replacement</h3>
+				</div>
+				<div class="admin-modal-content">
+					<div class="admc-details">
+						<div class="admc-details-wrapper">
+							<div class="admc-details-header">Request Account</div>
+							<div class="admc-details-text">Savings - 8947373583</div>
+						</div>
+						<div class="admc-details-wrapper">
+							<div class="admc-details-header">Reason for replacement</div>
+							<div class="admc-details-text">Stolen Card</div>
+						</div>
+						<div class="admc-details-wrapper">
+							<div class="admc-details-header">Mode of request</div>
+							<div class="admc-details-text">Mobile App</div>
+						</div>
+						<div class="admc-details-wrapper">
+							<div class="admc-details-header">Delivery type</div>
+							<div class="admc-details-text">
+								In-Branch PickUp (Stanbic Bank - Tema Industrial Area )
+							</div>
+						</div>
+						<div class="admc-details-wrapper">
+							<div class="admc-details-header">Type of card</div>
+							<div class="admc-details-text">MasterCard</div>
+						</div>
+						<div class="admc-details-wrapper">
+							<div class="admc-details-header">Time of request</div>
+							<div class="admc-details-text">Feb 12, 2022 - 11:43AM</div>
+						</div>
+					</div>
+					<form class="admin-accounts-modal-form register-form">
+						<p class="admin-accounts-modal-form-lead">OFFICIAL USE</p>
+						<div class="login-input-wrapper select">
+							<label for="">Official Decision</label>
+							<select name="" id="">
+								<option value="male">Approve Request</option>
+							</select>
+						</div>
+						<label for="request-completed" class="request-completed">
+							<input type="checkbox" name="" id="request-completed" />
+							Request Completed?
+						</label>
+					</form>
+				</div>
+				<div class="admin-modal-footer">
+					<button class="button-primary button-large">Confirm</button>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
