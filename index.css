@@ -2801,14 +2801,31 @@ footer {
 	color: #001324;
 	font-size: 32px;
 	font-family: Benton-Medium;
+	display: flex;
+	align-items: center;
+}
+
+.am-content-heading > img {
+	height: 56px;
+	width: 56px;
+	border-radius: 50%;
+	margin-right: 24px;
 }
 
 .am-tabs {
 	margin-top: 48px;
 }
 
+.am-tabs.mt-0 {
+	margin-top: 0px;
+}
+
 .am-tabs-header {
 	border-bottom: 1px solid #c1c7cd;
+}
+
+.am-tabs-header.account-variant {
+	margin: 0 50px;
 }
 
 .amth-list {
@@ -2833,6 +2850,7 @@ footer {
 	padding-bottom: 16px;
 	position: relative;
 	text-align: center;
+	white-space: nowrap;
 }
 
 .amth-list > li.active {
@@ -2849,6 +2867,20 @@ footer {
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.amth-list.account-variant {
+	padding: 0;
+}
+
+.amth-list.account-variant > li {
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-right: 16px;
+}
+
+.amth-list.account-variant > li.active::after {
+	width: 100%;
 }
 
 .amth-actions {
@@ -2943,17 +2975,18 @@ footer {
 	background-color: transparent;
 	width: auto;
 	font-family: Benton-Regular;
-	min-width: 90px;
+	min-width: 170px;
 	color: #fff;
 	padding-left: 32px;
 	height: 100%;
 }
 
-.amth-bulk-action > select {
-	min-width: 170px;
+.amth-filter-wrapper > select {
+	min-width: 149px;
 }
 
-.amth-bulk-action::after {
+.amth-bulk-action::after,
+.amth-filter-wrapper::after {
 	content: "";
 	background-image: url("./images/chevron_down_big.svg");
 	width: 15px;
@@ -3013,6 +3046,21 @@ footer {
 .amth-table th:nth-of-type(2),
 .amth-table td:nth-of-type(2) {
 	width: 250px;
+}
+
+.amth-table th:nth-of-type(3),
+.amth-table td:nth-of-type(3) {
+	width: 200px;
+}
+
+.amth-table th:nth-of-type(4),
+.amth-table td:nth-of-type(4) {
+	width: 200px;
+}
+
+.amth-table th:nth-of-type(5),
+.amth-table td:nth-of-type(5) {
+	width: 200px;
 }
 
 .amth-table th {
@@ -3086,6 +3134,90 @@ footer {
 .admin-loader > img {
 	width: 42px;
 	height: 42px;
+}
+
+.admin-back-link {
+	display: flex;
+	width: fit-content;
+	align-items: center;
+	color: #0069c4;
+	font-size: 16px;
+	font-family: Benton-Regular;
+	margin-left: 50px;
+	margin-bottom: 25px;
+}
+
+.admin-back-link > img {
+	margin-right: 11px;
+}
+
+.am-heading-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.quick-action-btn {
+	margin-right: 50px;
+	height: 64px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 204px;
+	font-family: Benton-Bold;
+	font-size: 18px;
+}
+
+.amth-accts {
+	border-top: 1px solid #c1c7cd;
+	border-bottom: 1px solid #c1c7cd;
+	padding: 40px 0px;
+	margin: 24px 50px;
+	display: flex;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	display: flex;
+}
+
+.amth-accts::-webkit-scrollbar {
+	display: none;
+}
+
+.amth-accts-card {
+	display: flex;
+	align-items: center;
+	margin-right: 60px;
+}
+
+.amth-accts-card:last-of-type {
+	margin-right: 0px;
+}
+
+.amthac-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 55px;
+	height: 55px;
+	background-color: #ffd7bf;
+	border-radius: 4px;
+	margin-right: 24px;
+}
+
+.amthc-type {
+	color: #58636c;
+	font-size: 12px;
+	font-family: Benton-Medium;
+}
+
+.amthc-amount {
+	color: #001324;
+	font-size: 24px;
+	font-family: Benton-Medium;
+	margin-top: 12px;
 }
 
 @media (max-width: 1366px) {
