@@ -2392,6 +2392,172 @@ footer {
 	}
 }
 /* user dashboard styling ends */
+/* admin dashboard styling begins */
+.admin-login-one {
+	height: 100vh;
+	display: flex;
+}
+
+.admin-login-left {
+	background-color: #0069c4;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 700px;
+	height: 100vh;
+	padding: 100px 88px 125px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.admin-login-one-elips {
+	background-image: url("./images/admin_ellipse.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	max-width: 364px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 20;
+}
+
+.admin-login-one-polygon {
+	background-image: url("./images/admin_polygon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	max-width: 202px;
+	height: 120px;
+	position: absolute;
+	left: 40px;
+	bottom: 80px;
+	z-index: 21;
+}
+
+.admin-logo-container > img {
+	width: 86px;
+	height: 91px;
+}
+
+.admin-left-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+	margin-top: 32px;
+}
+
+.admin-left-desc > h1 {
+	color: #f5faff;
+	line-height: 48px;
+	font-size: 40px;
+	font-family: Benton-Bold;
+	width: 100%;
+	max-width: 500px;
+	position: relative;
+	z-index: 23;
+}
+
+.admin-login-one-text {
+	font-size: 20px;
+	font-family: Benton-Regular;
+	line-height: 30px;
+	margin-top: 16px;
+	max-width: 450px;
+	color: #f5faff;
+	position: relative;
+	z-index: 23;
+}
+
+.admin-login-one-text > span {
+	font-family: Benton-Bold;
+}
+
+.admin-login-right {
+	background-color: #fff;
+	flex: 1;
+	height: 100vh;
+	padding: 191px 88px 125px;
+	display: flex;
+	flex-direction: column;
+}
+
+.admin-login-right-form {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	max-width: 480px;
+	width: 100%;
+	margin: 32px auto 0px;
+}
+
+.admin-login-right-form > h2 {
+	color: #001324;
+	font-size: 32px;
+	font-family: Benton-Medium;
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+.admin-login-right-form > .login-input-wrapper > label,
+.admin-login-right-form > .login-input-wrapper > input {
+	color: #292e32;
+}
+
+.admin-login-right-form > .login-input-wrapper::after {
+	background-image: url("./images/password_eye_black.svg");
+}
+
+.admin-forgot-password {
+	margin-top: 10px;
+	color: #001324;
+	font-family: Benton-Regular;
+	font-size: 14px;
+	margin-bottom: 48px;
+}
+
+.admin-forgot-password > a {
+	color: #0069c4;
+	font-family: Benton-Medium;
+}
+
+@media (max-width: 1366px) {
+  .admin-login-left,
+  .admin-login-right {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .admin-login-one {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-login-left {
+    height: auto;
+    width: 100%;
+    display: none;
+  }
+
+  .admin-login-right {
+    width: 100%;
+    padding: 48px 20px;
+  }
+
+  .admin-login-right-form {
+    max-width: 480px;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+  }
+}
+
+/* admin dashboard styling ends */
 
 /* media queries */
-/* 1366px, 1280px, 903px, 700px, 400px */
+/* 1366px, 1280px, 1170px, 903px, 700px, 400px */
