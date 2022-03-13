@@ -2410,6 +2410,11 @@ footer {
 	flex-direction: column;
 }
 
+.admin-login-two > .admin-login-left {
+	background-image: url("./images/admin_login_bg.png");
+	padding-bottom: 94px;
+}
+
 .admin-login-one-elips {
 	background-image: url("./images/admin_ellipse.png");
 	background-size: contain;
@@ -2441,12 +2446,23 @@ footer {
 	height: 91px;
 }
 
+.admin-login-two .admin-logo-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 59px;
+}
+
 .admin-left-desc {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	flex: 1;
 	margin-top: 32px;
+}
+
+.admin-login-two .admin-left-desc {
+	justify-content: flex-end;
+	text-align: center;
 }
 
 .admin-left-desc > h1 {
@@ -2458,6 +2474,11 @@ footer {
 	max-width: 500px;
 	position: relative;
 	z-index: 23;
+}
+
+.admin-login-two .admin-left-desc > h1 {
+	text-align: center;
+	margin: 0 auto;
 }
 
 .admin-login-one-text {
@@ -2475,6 +2496,52 @@ footer {
 	font-family: Benton-Bold;
 }
 
+.admin-login-two .admin-login-one-text {
+	margin: 7px auto 0px;
+	max-width: 521px;
+	text-align: center;
+}
+
+.admin-carousel-nav {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.admin-carousel-nav > span {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #f5faff;
+	opacity: 0.6;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.admin-carousel-nav > span:last-of-type {
+	margin-right: 0px;
+}
+
+.admin-carousel-nav > span.active {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(245, 250, 255, 0.5);
+	opacity: 1;
+}
+
+.admin-carousel-nav > span.active::after {
+	content: "";
+	background-color: #f5faff;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+
 .admin-login-right {
 	background-color: #fff;
 	flex: 1;
@@ -2482,6 +2549,10 @@ footer {
 	padding: 191px 88px 125px;
 	display: flex;
 	flex-direction: column;
+}
+
+.admin-login-two .admin-login-right {
+	padding-top: 80px;
 }
 
 .admin-login-right-form {
@@ -2492,6 +2563,10 @@ footer {
 	max-width: 480px;
 	width: 100%;
 	margin: 32px auto 0px;
+}
+
+.admin-login-two .admin-login-right-form {
+	margin-top: 0px;
 }
 
 .admin-login-right-form > h2 {
@@ -2525,36 +2600,40 @@ footer {
 }
 
 @media (max-width: 1366px) {
-  .admin-login-left,
-  .admin-login-right {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+	.admin-login-left,
+	.admin-login-right {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 @media (max-width: 1170px) {
-  .admin-login-one {
-    flex-direction: column;
-    align-items: center;
-  }
+	.admin-login-one {
+		flex-direction: column;
+		align-items: center;
+	}
 
-  .admin-login-left {
-    height: auto;
-    width: 100%;
-    display: none;
-  }
+	.admin-login-left {
+		height: auto;
+		width: 100%;
+		display: none;
+	}
 
-  .admin-login-right {
-    width: 100%;
-    padding: 48px 20px;
-  }
+	.admin-login-right {
+		width: 100%;
+		padding: 48px 20px;
+	}
 
-  .admin-login-right-form {
-    max-width: 480px;
-    width: 100%;
-    margin: auto;
-    align-items: center;
-  }
+	.admin-login-two .admin-login-right {
+		padding-top: 48px;
+	}
+
+	.admin-login-right-form {
+		max-width: 480px;
+		width: 100%;
+		margin: auto;
+		align-items: center;
+	}
 }
 
 /* admin dashboard styling ends */
