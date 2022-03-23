@@ -42,12 +42,8 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	min-height: -webkit-fill-available;
-	/* color: #292e32; */
-	max-width: 1440px;
-	min-width: 200px;
 	margin: 0px auto;
-	/* display: flex;
-	flex-direction: column; */
+	background: #f5faff;
 }
 
 html._fixed,
@@ -306,7 +302,6 @@ main,
 header,
 footer {
 	width: 100%;
-	background: #f5faff;
 }
 
 .hide-vertical-scrollbar {
@@ -646,17 +641,44 @@ footer {
 	.login {
 		flex-direction: column;
 		align-items: center;
+		height: 100%;
 	}
 
 	.login-left {
 		height: auto;
 		width: 100%;
-		display: none;
+		padding: 48px 20px 150px;
+	}
+
+	.login-left-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.login-left-desc {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-right: 0px;
+	}
+
+	.login-left-desc > h1 {
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.login-left-image {
+		margin-top: 32px;
+		width: 100%;
+		max-width: 313px;
 	}
 
 	.login-right {
 		width: 100%;
 		padding: 48px 20px;
+		height: auto;
 	}
 
 	.login-right-form {
@@ -671,6 +693,16 @@ footer {
 	.login-right-footer {
 		display: block;
 		margin-top: 20px;
+	}
+
+	.login-left-download {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.download-app-btn:first-of-type {
+		margin-right: 0px;
+		margin-bottom: 16px;
 	}
 
 	.login-right-footer > p,
@@ -724,8 +756,8 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 100px 64px;
-	min-height: 100vh;
+	padding: 64px;
+	height: 100%;
 }
 
 .register-heading-text {
@@ -3565,17 +3597,26 @@ footer {
 	.admin-login-one {
 		flex-direction: column;
 		align-items: center;
+		height: 100%;
 	}
 
 	.admin-login-left {
 		height: auto;
 		width: 100%;
-		display: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 48px 20px 150px;
+	}
+
+	.admin-login-two > .admin-login-left {
+		padding-bottom: 150px;
 	}
 
 	.admin-login-right {
 		width: 100%;
 		padding: 48px 20px;
+		height: auto;
 	}
 
 	.admin-login-two .admin-login-right {
@@ -3587,6 +3628,17 @@ footer {
 		width: 100%;
 		margin: auto;
 		align-items: center;
+	}
+
+	.admin-left-desc > h1 {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.admin-login-one-text {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
