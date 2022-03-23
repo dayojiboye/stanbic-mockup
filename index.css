@@ -131,10 +131,20 @@ button:disabled {
 	font-family: Benton-Medium;
 }
 
+.button-primary:hover {
+	background-color: #fff;
+	color: #0069c4;
+}
+
 .button-secondary {
 	background-color: #f5faff;
 	color: #0069c4;
 	font-family: Benton-Medium;
+}
+
+.button-secondary:hover {
+	background-color: #0069c4;
+	color: #fff;
 }
 
 .button-transparent {
@@ -151,12 +161,22 @@ button:disabled {
 	border: 2px solid #0069c4;
 }
 
+.button-secondary-transparent:hover {
+	background-color: #0069c4;
+	border: none;
+	color: #fff;
+}
+
 a {
 	outline: none;
 	font-family: inherit;
 	white-space: nowrap;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+a:hover {
+	color: #fe5f03 !important;
 }
 
 h1,
@@ -575,6 +595,11 @@ footer {
 .login-two .login-right-form > .button-secondary {
 	background-color: #0069c4;
 	color: #fff;
+}
+
+.login-two .login-right-form > .button-secondary:hover {
+	background-color: #fff;
+	color: #0069c4;
 }
 
 .login-register-text {
@@ -1056,6 +1081,11 @@ footer {
 	cursor: pointer;
 }
 
+.preferred-account-card:hover {
+	border: 1px solid #0069c4;
+	background-color: #0069c4;
+}
+
 .preferred-account-card > h3 {
 	color: #001324;
 	font-family: Benton-Bold;
@@ -1068,6 +1098,11 @@ footer {
 	font-size: 16px;
 	margin-top: 16px;
 	max-width: 225px;
+}
+
+.preferred-account-card:hover > h3,
+.preferred-account-card:hover > p {
+	color: #fff;
 }
 
 .personal-info-previous-button {
@@ -1174,9 +1209,18 @@ footer {
 	cursor: pointer;
 }
 
+.upload-document-card:hover {
+	background-color: #0069c4;
+	border: 1px solid #0069c4;
+}
+
 .upload-document-card.checked {
 	background-color: rgba(5, 186, 121, 0.15);
 	border: 1px solid #05ba79;
+}
+
+.upload-document-card.checked:hover .upload-document-text {
+	color: #292e32;
 }
 
 .upload-document-card-header {
@@ -1200,6 +1244,10 @@ footer {
 	font-family: Benton-Regular;
 	text-align: center;
 	margin-top: 20px;
+}
+
+.upload-document-card:hover .upload-document-text {
+	color: #fff;
 }
 
 .register-upload-sub-header {
@@ -1315,6 +1363,10 @@ footer {
 .user-dashboard-nav-links > li.active > a {
 	color: #0069c4;
 	font-family: Benton-Bold;
+}
+
+.user-dashboard-nav-links > li.active > a:hover {
+	color: #0069c4 !important;
 }
 
 .user-dashboard-actions {
@@ -1574,6 +1626,11 @@ footer {
 	white-space: pre-wrap;
 }
 
+.ud-qa-card:hover {
+	border: 1px solid #0069c4;
+	background-color: #0069c4;
+}
+
 .ud-qa-card > img {
 	width: 36px;
 	height: 36px;
@@ -1588,6 +1645,10 @@ footer {
 	margin-top: 16px;
 	max-width: 101px;
 	line-height: 16px;
+}
+
+.ud-qa-card:hover > p {
+	color: #fff;
 }
 
 .ud-support-chat {
@@ -1611,6 +1672,10 @@ footer {
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
+}
+
+.ud-support-chat > button:hover {
+	background-color: #3b98eb;
 }
 
 .ud-transfer-grid {
@@ -1708,6 +1773,11 @@ footer {
 	padding: 16px;
 }
 
+.ud-beneficiary-card:hover {
+	background-color: #0069c4;
+	border: none
+}
+
 .ud-beneficiary-card:last-of-type {
 	margin-right: 0px;
 }
@@ -1720,12 +1790,20 @@ footer {
 	margin-bottom: 3px;
 }
 
+.ud-beneficiary-card:hover > h4 {
+	color: #fff;
+}
+
 .ud-beneficiary-card > p {
 	text-align: center;
 	max-width: 69px;
 	color: #002341;
 	font-family: Benton-Regular;
 	font-size: 10px;
+}
+
+.ud-beneficiary-card:hover > p {
+	color: #fff;
 }
 
 .ud-new-beneficiary-form {
@@ -1999,6 +2077,10 @@ footer {
 	align-items: center;
 }
 
+.tm-download-btn:hover {
+	opacity: 0.8;
+}
+
 .tm-download-btn > img {
 	margin-right: 9px;
 }
@@ -2033,6 +2115,12 @@ footer {
 	background-color: transparent;
 }
 
+.uds-account-btn:hover {
+	background-color: #0069c4;
+	color: #fff;
+	border: 1px solid #0069c4;
+}
+
 .uds-account-btn.selected {
 	background-color: #0069c4;
 	border: 0;
@@ -2047,6 +2135,10 @@ footer {
 	color: #0069c4;
 	font-family: Benton-Medium;
 	font-size: 18px;
+}
+
+.uds-create-account-btn:hover {
+	color: #fe5f03;
 }
 
 .uds-search-wrapper {
@@ -2202,6 +2294,10 @@ footer {
 	padding: 0px;
 	background-color: transparent;
 	border-radius: 4px;
+}
+
+.mobile-networks > button:hover {
+	border: 2px solid #0069c4;
 }
 
 .mobile-networks > button.selected-network {
@@ -2742,6 +2838,12 @@ footer {
 	opacity: 0.8;
 	margin-bottom: 32px;
 	background-color: transparent;
+}
+
+.admin-nav-menu-item > a:hover,
+.admin-nav-menu-item > button:hover {
+	color: #fe5f03;
+	opacity: 1;
 }
 
 .admin-nav-menu-item.active > a {
@@ -3394,6 +3496,10 @@ footer {
 	justify-content: center;
 	border-radius: 50%;
 	/* box-shadow: 0px 5px 12px rgb(254 95 3 / 16%); */
+}
+
+.admh-close-btn:hover {
+	background-color: #e5edf5;
 }
 
 .admin-modal-content {

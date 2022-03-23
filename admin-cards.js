@@ -2,6 +2,8 @@ const adminCardModal = document.getElementById("admin-card-modal");
 const adminCardModalBtn = document.getElementById("admin-card-modal-close-btn");
 const adminCardModalContent = adminCardModal.querySelector(".admin-modal-wrapper");
 const addNewCardBtn = document.getElementById("add-new-card-btn");
+const body = document.body;
+const html = document.documentElement;
 
 addNewCardBtn.addEventListener("click", () => {
 	adminCardModal.classList.add("show");

@@ -2,6 +2,8 @@ const adminAccountsModal = document.getElementById("admin-accounts-modal");
 const adminAccountsModalBtn = document.getElementById("accounts-modal-close-btn");
 const adminCardModalWrapper = document.getElementById("admin-accounts-modal-wrapper");
 const addNewAccountBtn = document.getElementById("add-new-account-btn");
+const body = document.body;
+const html = document.documentElement;
 
 addNewAccountBtn.addEventListener("click", () => {
 	adminAccountsModal.classList.add("show");
