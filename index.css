@@ -3156,6 +3156,10 @@ footer {
 	border-collapse: collapse;
 }
 
+.amth-table tbody tr:hover {
+	background-color: #eee;
+}
+
 .amth-table th,
 .amth-table td {
 	white-space: nowrap;
