@@ -44,14 +44,14 @@
 				</div>
 			</div>
 			<form class="register-form">
-				<div class="login-input-wrapper disabled">
-					<label for="">Account Name</label>
-					<input type="text" value="Mensah Osei" disabled />
-				</div>
-				<div class="login-input-wrapper">
-					<label for="">OTP Code</label>
-					<input type="text" value="" />
-				</div>
+				<label for="account-name" class="login-input-wrapper disabled">
+					<span>Account Name</span>
+					<input id="account-name" type="text" value="Mensah Osei" disabled />
+				</label>
+				<label for="otp-code" class="login-input-wrapper">
+					<span>OTP Code</span>
+					<input id="otp-code" type="text" value="" />
+				</label>
 				<p class="request-otp-text">Don’t have token? <a>Request OTP</a></p>
 				<button class="button-primary button-xl">Verify and Continue</button>
 			</form>

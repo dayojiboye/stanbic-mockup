@@ -71,29 +71,29 @@
 					<div class="ud-beneficiaries">
 						<form class="register-form ud-new-beneficiary-form" id="register-form">
 							<h2 class="ud-beneficiary-sub-heading">Existing Beneficiary</h2>
-							<div class="login-input-wrapper select mb-24">
-								<label for="">Beneficiary</label>
+							<label class="login-input-wrapper select mb-24">
+								<span>Beneficiary</span>
 								<select name="" id="">
 									<option value="male">Owusu Appiah - 0001039711</option>
 								</select>
-							</div>
-							<div class="login-input-wrapper select mb-24">
-								<label for="">Account to Debit</label>
+							</label>
+							<label class="login-input-wrapper select mb-24">
+								<span>Account to Debit</span>
 								<select name="" id="">
 									<option value="male">
 										Mensah Osei - 0127639747 - ₵500,000.11
 									</option>
 								</select>
-							</div>
+							</label>
 							<div class="personal-info-form-grid">
-								<div class="login-input-wrapper">
-									<label for="">Beneficiary Account Number</label>
-									<input type="text" value="0038476436" />
-								</div>
-								<div class="login-input-wrapper">
-									<label for="">Amount to Transfer</label>
-									<input type="text" value="₵20,000" />
-								</div>
+								<label for="beneficiary-account" class="login-input-wrapper">
+									<span>Beneficiary Account Number</span>
+									<input id="beneficiary-account" type="text" value="0038476436" />
+								</label>
+								<label for="amount" class="login-input-wrapper">
+									<span>Amount to Transfer</span>
+									<input id="amount" type="text" value="₵20,000" />
+								</label>
 							</div>
 							<p class="ud-beneficiary-selected-name">Appiah Jackie</p>
 							<input class="ud-beneficiary-remarks" placeholder="Remarks" />

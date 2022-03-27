@@ -40,32 +40,32 @@
 			</div>
 			<form class="register-form">
 				<div class="personal-info-form-grid">
-					<div class="login-input-wrapper select">
-						<label for="">Gender</label>
+					<label class="login-input-wrapper select">
+						<span>Gender</span>
 						<select name="" id="">
 							<option value="male">Male</option>
 							<option value="female">Female</option>
 						</select>
-					</div>
-					<div class="login-input-wrapper date-picker">
-						<label for="">Date of Birth</label>
-						<input type="text" value="26 June 1984" />
-					</div>
-					<div class="login-input-wrapper">
-						<label for="">Mother’s Miaden Name</label>
-						<input type="text" value="Koffi" />
-					</div>
-					<div class="login-input-wrapper select">
-						<label for="">Nationality</label>
+					</label>
+					<label for="dob" class="login-input-wrapper date-picker">
+						<span>Date of Birth</span>
+						<input id="dob" type="text" value="26 June 1984" />
+					</label>
+					<label for="maiden" class="login-input-wrapper">
+						<span>Mother’s Miaden Name</span>
+						<input id="maiden" type="text" value="Koffi" />
+					</label>
+					<label class="login-input-wrapper select">
+						<span>Nationality</span>
 						<select name="" id="">
 							<option value="male">Ghanian</option>
 						</select>
-					</div>
+					</label>
 				</div>
-				<div class="login-input-wrapper">
-					<label for="">Email Address</label>
-					<input type="email" value="aa_jackie@yahoo.com" />
-				</div>
+				<label for="email" class="login-input-wrapper">
+					<span>Email Address</span>
+					<input id="email" type="email" value="aa_jackie@yahoo.com" />
+				</label>
 				<button class="button-primary button-xl mt-21">Next</button>
 				<div class="personal-info-previous-button">
 					<a>

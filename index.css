@@ -201,7 +201,7 @@ img {
 
 label {
 	display: block;
-	margin-bottom: 7px;
+	/* margin-bottom: 7px; */
 }
 
 input,
@@ -273,6 +273,8 @@ select {
 
 .select-wrapper > select {
 	border-radius: 0px;
+	position: relative;
+	z-index: 2;
 }
 
 .select-wrapper.language {
@@ -301,6 +303,7 @@ select {
 	flex-shrink: 0;
 	top: 50%;
 	transform: translateY(-50%);
+	z-index: 2;
 }
 
 .select-wrapper.language::after {
@@ -540,11 +543,12 @@ footer {
 	margin-top: 25px;
 }
 
-.login-input-wrapper > label {
+.login-input-wrapper > span {
 	font-family: Benton-Regular;
 	color: #fff;
 	margin-bottom: 10px;
 	font-size: 14px;
+	display: block;
 }
 
 .login-input-wrapper > input {
@@ -555,7 +559,7 @@ footer {
 	color: #fff;
 }
 
-.login-two .login-input-wrapper > label,
+.login-two .login-input-wrapper > span,
 .login-two .login-input-wrapper > input {
 	color: #292e32;
 }
@@ -880,7 +884,7 @@ footer {
 	margin-bottom: 24px;
 }
 
-.register-form .login-input-wrapper > label {
+.register-form .login-input-wrapper > span {
 	color: #292e32;
 }
 
@@ -893,7 +897,7 @@ footer {
 	font-size: 18px;
 }
 
-.login-input-wrapper.disabled > label,
+.login-input-wrapper.disabled > span,
 .login-input-wrapper.disabled > input {
 	color: #89959f;
 }
@@ -923,6 +927,28 @@ footer {
 
 .register-form .login-input-wrapper.mb-24 {
 	margin-bottom: 24px;
+}
+
+.login-input-wrapper.select {
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+.login-input-wrapper.select > span,
+.login-input-wrapper.select > select {
+	padding: 0px 16px;
+}
+
+.login-input-wrapper.select > span {
+	margin-top: 14px;
+	margin-bottom: 0;
+}
+
+.login-input-wrapper.select > select {
+	flex: 1;
+	position: relative;
+	z-index: 3;
 }
 
 .register-form .login-input-wrapper.select::after {
@@ -1775,7 +1801,7 @@ footer {
 
 .ud-beneficiary-card:hover {
 	background-color: #0069c4;
-	border: none
+	border: none;
 }
 
 .ud-beneficiary-card:last-of-type {
@@ -2705,7 +2731,7 @@ footer {
 	text-align: center;
 }
 
-.admin-login-right-form > .login-input-wrapper > label,
+.admin-login-right-form > .login-input-wrapper > span,
 .admin-login-right-form > .login-input-wrapper > input {
 	color: #292e32;
 }
@@ -3080,7 +3106,7 @@ footer {
 	border: 1px solid #fff;
 	border-radius: 4px;
 	height: 48px;
-	padding: 0px 10px;
+	/* padding: 0px 10px; */
 }
 
 .amth-bulk-action {
@@ -3109,6 +3135,9 @@ footer {
 	color: #fff;
 	padding-left: 32px;
 	height: 100%;
+	padding-left: 40px;
+	position: relative;
+	z-index: 21;
 }
 
 .amth-filter-wrapper > select {
@@ -3397,7 +3426,6 @@ footer {
 
 .amsa-filter-wrapper {
 	position: relative;
-	padding: 14px 11px;
 	height: 48px;
 	border: 1px solid #c1c7cd;
 	border-radius: 4px;
@@ -3419,6 +3447,9 @@ footer {
 	height: 100%;
 	min-width: 100px;
 	border: 0;
+	position: relative;
+	z-index: 3;
+	padding: 0px 11px;
 }
 
 .amsa-filter-wrapper.focused > select {
@@ -3436,6 +3467,7 @@ footer {
 	right: 11px;
 	width: 15px;
 	height: 7px;
+	z-index: 2;
 }
 
 .amsa-filter-wrapper.focused::after {
